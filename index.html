@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Git Gud</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <style type="text/css">
+      
+/* General */
+      body {
+        background: linear-gradient(
+          rgba(0,0,0,0.5),
+          rgba(0,0,0,0.5)
+          ), url(image/background.jpg);
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        font-family: cursive;
+      }
+/* /General */
+
+/* Top Part */
+      menu {
+        margin: 0 0 10px 0;
+        padding-left: 20%;
+      }
+
+      menu > .navbar-inverse {
+        margin: 0;
+      }
+
+      header .bannerhead > .carousel > .carousel-inner > .two h3,
+      header .bannerhead > .carousel > .carousel-inner > .two p {
+        text-align: left;
+      }
+
+      header .bannerhead > .carousel > .carousel-inner > .three h3,
+      header .bannerhead > .carousel > .carousel-inner > .three p {
+        text-align: right;
+      }
+
+      header .bannerhead > .carousel > .carousel-inner > .two p {
+        padding-right: 50%;
+      }
+
+      header .bannerhead > .carousel > .carousel-inner > .three p {
+        padding-left: 50%;
+      }
+
+      header .bannerhead > .carousel > .carousel-inner > .one h3,
+      header .bannerhead > .carousel > .carousel-inner > .two h3,
+      header .bannerhead > .carousel > .carousel-inner > .three h3 {
+        text-shadow: 5px 5px 10px red;
+      }
+
+      header .bannerhead > .carousel > .carousel-inner > .one p,
+      header .bannerhead > .carousel > .carousel-inner > .two p,
+      header .bannerhead > .carousel > .carousel-inner > .three p {
+        text-shadow: 5px 5px 10px black;
+      }
+
+      header > .logo {
+        margin-bottom: 10px;
+      }
+
+      header > .logo > img {
+        width: 100%;
+      }
+/* /Top Part */
+
+/* Content */
+    /* Left Panel */
+      content .col-md-5 > .panelleft {
+        border: 2px solid white;
+        background-color: rgba(255,255,255,0.7);
+        box-shadow: 10px 10px 10px black;
+        border-radius: 10px;
+      }
+
+      content .col-md-5 h1 {
+        text-align: center;
+        color: white;
+        padding: 20px 0 10px 0;
+        margin: 0;
+        text-shadow: 5px 5px 10px black;
+        background: linear-gradient(
+          rgba(255,0,0,0.5),
+          rgba(255,0,0,0.5)
+          ), url(image/bannerhome.png);
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+        background-position: top;
+      }
+
+      content .col-md-5 .panelleft-carousel {
+        float: right;
+        margin: 10px;
+      }
+    /* /Left Panel */
+
+    /* Right Panel */
+      content .col-md-5 > .panelright {
+        border: 2px solid white;
+        background-color: rgba(255,255,255,0.7);
+        box-shadow: 10px 10px 10px black;
+        border-radius: 10px;
+        position: relative;
+      }
+
+      content .col-md-5 > .panelright > h1 {
+        text-align: center;
+        color: white;
+        padding: 20px 0 10px 0;
+        margin: 0;
+        text-shadow: 5px 5px 10px black;
+        background: linear-gradient(
+          rgba(255,0,0,0.5),
+          rgba(255,0,0,0.5)
+          ), url(image/bannerhome2.jpg);
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+        background-position: center;
+      }
+
+      content .col-md-5 .panelright-carousel {
+        float: left;
+        margin: 10px;
+      }
+    /* /Right Panel*/
+
+    /* Middle Img */
+      content .col-md-2 {
+        background-image: url(image/ryu.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+      }
+    /* /Middle Img */
+/* /Content */
+
+/* Comment */
+    /* Header */
+      summary > .container > h1 {
+        color: white;
+        text-decoration: underline;
+        text-shadow: 5px 5px 10px red;
+        margin-bottom: 20px;
+      }
+    /* /Header */
+
+    /* Top Left Comment */
+      summary .s1 > .section1 {
+        color: white;
+        margin-bottom: 10px;
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: rgba(0,0,0,0.7);
+      }
+
+      summary .s1 > .section1 > .picture1 {
+        width: 25%;
+        float: left;
+      }
+
+       summary .s1 > .section1 > .picture1 > figcaption {
+        text-align: center;
+      }
+
+      summary .s1 > .section1 > .picture1 > img {
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+
+      summary .s1 > .section1 > .comment1 {
+        float: right;
+        width: 73%;
+      }
+
+      summary .container > .section1 > .comment1 > p {
+        text-indent: 20px;
+      }
+    /* /Top Left Comment */
+
+    /* Top Right Comment */
+      summary .container > .section2 {
+        color: white;
+        margin-bottom: 10px;
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: rgba(0,0,0,0.7);
+      }
+
+      summary .container > .section2 > .picture2 {
+        width: 25%;
+        float: left;
+      }
+
+      summary .container > .section2 > .picture2 > figcaption {
+        text-align: center;
+      }
+
+      summary .container > .section2 > .picture2 > img {
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+
+      summary .container > .section2 > .comment2 {
+        float: right;
+        width: 73%;
+      }
+
+      summary .container > .section2 > .comment2 > p {
+        text-indent: 20px;
+      }
+    /* /Top Right Comment */
+
+    /* Bottom Left Comment */
+      summary .container > .section3 {
+        color: white;
+        margin-bottom: 20px;
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: rgba(0,0,0,0.7);
+      }
+
+      summary .container > .section3 > .picture3 {
+        width: 25%;
+        float: left;
+      }
+
+      summary .container > .section3 > .picture3 > figcaption {
+        text-align: center;
+      }
+
+      summary .container > .section3 > .picture3 > img {
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+
+      summary .container > .section3 > .comment3 {
+        float: right;
+        width: 73%;
+      }
+
+      summary .container > .section3 > .comment3 > p {
+        text-indent: 20px;
+      }
+    /* /Bottem Left Comment */
+
+    /* Bottome Right Comment*/
+    summary .container > .section4 {
+        color: white;
+        margin-bottom: 20px;
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: rgba(0,0,0,0.7);
+      }
+
+      summary .container > .section4 > .picture4 {
+        width: 25%;
+        float: left;
+      }
+
+      summary .container > .section4 > .picture4 > figcaption {
+        text-align: center;
+      }
+
+      summary .container > .section4 > .picture4 > img {
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+
+      summary .container > .section4 > .comment4 {
+        float: right;
+        width: 73%;
+      }
+
+      summary .container > .section4 > .comment4 > p {
+        text-indent: 20px;
+      }
+
+      /* Debug */
+      summary:after {
+        clear: both;
+        content: "";
+        display: block;
+      }
+      /* /Debug */
+    /* /Bottom Right Comment */
+/* /Comment */
+
+/* Footer */
+    /* General */
+      footer {
+        border-top: 2px solid white;
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+        padding: 20px 20px 0 20px;
+      }
+
+      footer .container > .firstcol,
+      footer .container > .seccol,
+      footer .container > .thirdcol {
+        text-align: center;
+      }
+
+      footer .container > .firstcol > ul,
+      footer .container > .seccol > ul,
+      footer .container > .thirdcol > ul {
+        list-style: none;
+      }
+
+      footer .container > .firstcol > ul,
+      footer .container > .seccol > ul,
+      footer .container > .thirdcol > ul {
+        padding: 0;
+      }
+    /* /General */
+
+    /* First Column */
+      footer .container > .firstcol > h4 > a:link,
+      footer .container > .firstcol > ul > li > a:link {
+        color: white;
+      }
+
+      footer .container > .firstcol > h4 > a:visited,
+      footer .container > .firstcol > ul > li > a:visited {
+        color: white;
+      }
+
+      footer .container > .firstcol > h4 > a:hover,
+      footer .container > .firstcol > ul > li > a:hover {
+        text-decoration: none;
+      }
+    /* /First Column */
+
+    /* Second Column */
+      footer .container > .seccol > h4 > a:link,
+      footer .container > .seccol > ul > li > a:link {
+        color: white;
+      }
+
+      footer .container > .seccol > h4 > a:visited,
+      footer .container > .seccol > ul > li > a:visited {
+        color: white;
+      }
+
+      footer .container > .seccol > h4 > a:hover,
+      footer .container > .seccol > ul > li > a:hover {
+        text-decoration: none;
+      }
+    /* /Second Column */
+
+    /* Third Column */
+      footer .container > .thirdcol > h4 > a:link,
+      footer .container > .thirdcol > ul > li > a:link {
+        color: white;
+      }
+
+      footer .container > .thirdcol > h4 > a:visited,
+      footer .container > .thirdcol > ul > li > a:visited {
+        color: white;
+      }
+
+      footer .container > .thirdcol > h4 > a:hover,
+      footer .container > .thirdcol > ul > li > a:hover {
+        text-decoration: none;
+      }
+    /* /Third Column */
+
+    /* Social Media */
+      footer .container > .social > .facebook > ul {
+        list-style: none;
+      }
+
+      footer .container > .social > .facebook li > a > img {
+        width: 20%;
+        margin-bottom: 10px;
+      }
+
+      footer .container > .social > .facebook  li > a:link {
+        color: white;
+      }
+
+      footer .container > .social > .facebook  li > a:visited {
+        color: white;
+      }
+
+      footer .container > .social > .facebook  li > a:hover {
+        color: white;
+      }
+    /* /Social Media*/
+/* /Footer */
+
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+<!-- Top Part -->
+    <header>
+
+      <!-- Banner -->
+      <banner>
+        <div class="container-fluid bannerhead" style="padding: 0">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              <div class="item active one">
+                <img src="image/banner1.jpg" alt="" style="width: 100%; height: 50vh">
+                <div class="carousel-caption">
+                  <h3>Welcome to GitGud.com!</h3>
+                  <p>
+                  Learn Muay Thai and BJJ for you to start training before entering a real school and get rekt!!!
+                  </p>
+                </div>
+              </div>
+
+              <div class="item two">
+                <img src="image/banner2.jpg" alt="" style="width: 100%; height: 50vh">
+                <div class="carousel-caption">
+                  <h3>Learn the basics!!!</h3>
+                  <p>
+                  You want to know what, how and where you should start?
+                  Learn about the 2 High-Intensity Martial Arts there is to begin.
+                  </p>
+                </div>
+              </div>
+
+              <div class="item three">
+                <img src="image/banner3.jpg" alt="" style="width: 100%; height: 50vh">
+                <div class="carousel-caption">
+                  <h3>Find your best suited Art</h3>
+                  <p>
+                    Learn one or simultaneously to enhance your physical skills in the art of 8 limb strikes and the art of ground grappling.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </banner>
+      <!-- /Banner -->
+
+      <!-- Logo -->
+      <div class="logo col-md-2 col-sm-2 col-xs-2">
+        <img src="image/yinyang.png" alt="">
+      </div>
+      <!-- /Logo -->
+
+      <!-- Menu -->
+      <menu class="col-md-10 col-sm-10 col-xs-10">
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="menu">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">HOME</a></li>
+                <li class="dropdown">
+                  <a href="Muay Thai.html" class="dropdown-toggle" data-toggle="dropdown">
+                      MUAY THAI
+                      <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="Muay Thai.html">Overview</a></li>
+                    <li><a href="Muay Thai.html#history">History</a></li>
+                    <li><a href="Muay Thai.html#moves">Moves</a></li>
+                    <li><a href="Muay Thai.html#ranks">Ranks</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="BJJ.html" class="dropdown-toggle" data-toggle="dropdown">
+                    BJJ
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="BJJ.html">Overview</a></li>
+                    <li><a href="BJJ.html#history">History</a></li>
+                    <li><a href="BJJ.html#moves">Moves</a></li>
+                    <li><a href="BJJ.html#ranks">Ranks</a></li>
+                  </ul>
+                </li>
+                <li><a href="about.html">ABOUT ME</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </menu>
+      <!-- /Menu -->
+    </header>
+<!-- /Top Part -->
+
+<!-- Content -->
+    <content class="row">
+      <div class="container-fluid col-md-12 col-sm-12 col-xs-12">
+
+        <!-- Left Panel -->
+        <div class="col-md-5 col-sm-10 col-xs-10 leftpanel" style="margin-bottom: 10px">
+          <div class="panelleft">
+            <h1>Muay Thai</h1>
+            <div class="container-fluid">
+              <div class="panelleft-carousel">
+                <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel2" data-slide-to="1"></li>
+                    <li data-target="#myCarousel2" data-slide-to="2"></li>
+                  </ol>
+
+
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="image/panel left/pic1.jpg" alt="" style="width: 300px; height: 150px">
+                    </div>
+
+                    <div class="item">
+                      <img src="image/panel left/pic2.jpg" alt="" style="width: 300px; height: 150px">
+                    </div>
+
+                    <div class="item">
+                      <img src="image/panel left/pic3.png" alt="" style="width: 300px; height: 150px">
+                    </div>
+                  </div>
+
+
+                  <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+              <p style="color: black; margin: 10px">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /Left Panel -->
+
+        <!-- Middle Img -->
+        <div class="col-md-2 col-sm-2 col-xs-2 middlepanel">
+
+        </div>
+        <!-- /Middle Img -->
+
+        <!-- Right Panel -->
+        <div class="col-md-5 col-sm-10 col-xs-10 rightpanel" style="margin-bottom: 10px">
+          <div class="panelright">
+            <h1>Brazilian Jiu-Jitsu</h1>
+            <div class="container-fluid">
+              <div class="panelright-carousel">
+                <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel3" data-slide-to="1"></li>
+                    <li data-target="#myCarousel3" data-slide-to="2"></li>
+                  </ol>
+
+
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="image/panel right/pic1.jpg" alt="" style="width: 300px; height: 150px">
+                    </div>
+
+                    <div class="item">
+                      <img src="image/panel right/pic2.jpg" alt="" style="width: 300px; height: 150px">
+                    </div>
+
+                    <div class="item">
+                      <img src="image/panel right/pic3.jpg" alt="" style="width: 300px; height: 150px">
+                    </div>
+                  </div>
+
+
+                  <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel3" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+              <p style="color: black; margin: 10px">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /Right Panel -->
+      </div>
+    </content>
+<!-- /Content -->
+<hr class="container">
+<!-- Comment -->
+    <summary>
+      <div class="container">
+        <h1>Comments</h1>
+      </div>
+      <div class="container row col-md-12 col-sm-12 col-xs-12">
+
+        <!-- Section1 -->
+        <div class="s1 container col-md-6 col-sm-12 col-xs-12">
+          <div class="section1">
+            <figure class="picture1">
+              <img src="image/comment/download.jpg" alt="">
+              <figcaption><q>Ainsley Harriott</q></figcaption>
+            </figure>
+            <div class="comment1">
+              <h6><i>Date Posted: May 30, 2017</i></h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /Section1 -->
+
+        <!-- Section2 -->
+        <div class="s2 container col-md-6 col-sm-12 col-xs-12">
+          <div class="section2">
+            <figure class="picture2">
+              <img src="image/comment/download (1).jpg" alt="">
+              <figcaption><q>M'Lady Fedora</q></figcaption>
+            </figure>
+            <div class="comment2">
+              <h6><i>Date Posted: May 30, 3017</i></h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /Section2 -->
+
+        <!-- Section3 -->
+        <div class="s3 container col-md-6 col-sm-12 col-xs-12">
+          <div class="section3">
+            <figure class="picture3">
+              <img src="image/comment/download (2).jpg" alt="">
+              <figcaption><q>Eddie Murphy</q></figcaption>
+            </figure>
+            <div class="comment3">
+              <h6><i>Date Posted: 10,000 B.C.</i></h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /Section3 -->
+
+        <!-- Section4 -->
+        <div class="s4 container col-md-6 col-sm-12 col-xs-12">
+          <div class="section4">
+            <figure class="picture4">
+              <img src="image/comment/download (3).jpg" alt="">
+              <figcaption><q>Donald Trump</q></figcaption>
+            </figure>
+            <div class="comment4">
+              <h6><i>Date Posted: February 31, 2018</i></h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /Section4 -->
+
+
+      </div>
+    </summary>
+<!-- /Comment -->
+
+<!-- Footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="container col-md-12">
+
+          <!-- First Column -->
+          <div class="col-md-2 firstcol">
+            <h4>MUAY THAI</h4>
+            <ul>
+              <li><a href="Muay Thai.html">Overview</a></li>
+              <li><a href="Muay Thai.html#history">History</a></li>
+              <li><a href="Muay Thai.html#moves">Moves</a></li>
+              <li><a href="Muay Thai.html#ranks">Ranks</a></li>
+            </ul>
+          </div>
+          <!-- /First Column -->
+
+          <!-- Second Column -->
+          <div class="col-md-2 seccol">
+            <h4>BJJ</h4>
+            <ul>
+              <li><a href="BJJ.html">Overview</a></li>
+              <li><a href="BJJ.html#history">History</a></li>
+              <li><a href="BJJ.html#moves">Moves</a></li>
+              <li><a href="BJJ.html#ranks">Ranks</a></li>
+            </ul>
+          </div>
+          <!-- /Second Column -->
+
+          <!-- Third Column -->
+          <div class="col-md-2 thirdcol">
+            <h4><a href="about.html">ABOUT ME</a></h4>
+          </div>
+          <!-- /Third Column -->
+
+          <!-- Social Media -->
+          <div class="col-md-6 social">
+            <h4>Follow us on:</h4>
+            <div class="facebook col-md-6 col-sm-6 col-xs-6">
+              <ul>
+                <li><a href="#"><img src="image/social/fb.png" alt="">Facebook</a></li>
+                <li><a href="#"><img src="image/social/twitt.png" alt="">Twitter</a></li>
+                <li><a href=""><img src="image/social/tumblr.png" alt="">Tumblr</a></li>
+              </ul>
+            </div>
+            <div class="facebook col-md-6 col-sm-6 col-xs-6">
+              <ul>
+                <li><a href=""><img src="image/social/google.png" alt="">Google</a></li>
+                <li><a href=""><img src="image/social/pinterest.png" alt="">Pinterest</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- /Social Media -->
+
+        </div>
+      </div>
+    </footer>
+<!-- /Footer -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

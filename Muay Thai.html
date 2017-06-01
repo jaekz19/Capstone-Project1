@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Muay Thai</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <style type="text/css">
+      
+/* General */
+    body {
+      background: linear-gradient(
+          rgba(0,0,0,0.5),
+          rgba(0,0,0,0.5)
+          ), url(image/background.jpg);
+      background-attachment: fixed;
+      background-position: center center;
+      background-size: cover;
+    }
+
+    html, body {
+      overflow-x: hidden;
+    }
+/* /General */
+
+/* Top Part */
+    header > .container-fluid {
+      background-image: url(imagespage1/banner.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: black;
+      width: 100vw;
+      height: 20vh;
+      border-bottom: 1px solid white;
+    }
+
+    header > .container-fluid > .websitename {
+      text-align: right;
+      color: white;
+      text-shadow: 5px 5px 10px red;
+      padding-top: 20px;
+    }
+
+    .affix {
+      top: 0;
+      width: 100%;
+    }
+
+    header nav {
+      z-index: 1000000;
+    }
+/* /Top Part*/
+
+/* Content */
+  /* History */
+    content > .history > h1 {
+      color: white;
+    }
+    /* International */
+    content > .history .international > .panel-heading {
+      font-size: 2em;
+    }
+    content > .history .international > .panel-body {
+      background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        ), url(image/background.jpg);
+      background-position: center center;
+      background-size: cover;
+      border-radius: 0 0 3px 3px;
+    }
+
+    content > .history .international > .panel-body > .intimg {
+      width: 30%;
+      float: left;
+      margin-right: 10px;
+    }
+
+    content > .history .international > .panel-body > .intimg > img {
+      width: 100%;
+    }
+
+    content > .history .international > .panel-body > p {
+      text-indent: 10px;
+      color: white;
+    }
+    /* /International*/
+
+    /* Local */
+    content > .history .localhist > .panel-heading {
+      font-size: 2em;
+    }
+    content .history .localhist > .panel-body {
+      background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        ), url(image/background.jpg);
+      background-position: center center;
+      background-size: cover;
+      border-radius: 0 0 3px 3px;
+    }
+
+    content > .history .localhist > .panel-body > .locimg {
+      width: 30%;
+      float: right;
+      margin-right: 10px;
+    }
+
+    content > .history .localhist > .panel-body > .locimg > img {
+      width: 100%;
+    }
+
+    content > .history .localhist > .panel-body > p {
+      text-indent: 10px;
+      color: white;
+    }
+    /* /Local */
+  /* /History*/
+
+  /* Moves */
+    /* Header */
+    content > .moves > .container > h1 {
+      color: white;
+      margin: 0 0 20px 0;
+      text-shadow: 5px 5px 10px red;
+      text-decoration: underline;
+    }
+    /* /Header */
+
+    /* Stance */
+    content > .moves > .stance {
+      border: 2px solid white;
+      background-color: rgba(255,255,255,0.75);
+      border-radius: 10px;
+      padding: 0;
+      margin-bottom: 40px;
+    } 
+
+    content > .moves > .stance > h1 {
+      color: white;
+      background: linear-gradient(
+        rgba(255,0,0,0.75),
+        rgba(255,0,0,0.75)
+        ), url(imagespage1/moves/banner.jpg);
+      border-radius: 10px 10px 0 0;
+      text-shadow: 5px 5px 10px black;
+      margin: 0;
+      padding: 30px 0 20px 20px;
+      background-size: cover;
+      }
+
+    content > .moves > .stance > .stancedes > figure {
+      float: right;
+      width: 50%;
+      margin: 10px;
+      border: 2px solid black;
+      padding: 10px;
+    }
+
+    content > .moves > .stance > .stancedes img {
+      width: 100%;
+    }
+
+    content > .moves > .stance > .stancedes figcaption {
+      color: black;
+      text-align: center;
+    }
+
+    content > .moves > .stance > .stancedes > p {
+      color: black;
+      text-indent: 20px;
+      padding-top: 10px;
+    }
+
+    content > .moves > .stance > .stancedes:after {
+      clear: both;
+      content: "";
+      display: block;
+    }
+    /* /Stance*/
+
+    /* Move1 */
+    content > .moves > .container > .move1 {
+      border: 2px solid white;
+      border-radius: 10px;
+      padding: 0;
+      margin-bottom: 15px;
+    }
+
+    content > .moves > .container > .move1 > h1 {
+      color: white;
+      background-color: rgba(255,0,0,0.75);
+      margin: 0;
+      padding: 20px 0 10px 20px;
+      border-radius: 10px 10px 0 0;
+      border-bottom: 2px solid white;
+      text-shadow: 5px 5px 10px black;
+    }
+
+    content > .moves > .container > .move1 > .move1des {
+      color: black;
+      padding-top: 10px;
+      background-color: rgba(255,255,255,0.75);
+    }
+
+    content > .moves > .container > .move1 > .move1des > figure {
+      width: 50%;
+      float: right;
+      padding: 10px;
+    }
+
+    content > .moves > .container > .move1 > .move1des > figure > img {
+      width: 100%;
+    }
+
+    /* /Move1 */
+
+    /* Move2 */
+    content > .moves > .container > .move2 {
+      border: 2px solid white;
+      border-radius: 10px;
+      padding: 0;
+      margin-bottom: 15px;
+    }
+
+    content > .moves > .container > .move2 > h1 {
+      color: white;
+      background-color: rgba(255,0,0,0.75);
+      margin: 0;
+      padding: 20px 0 10px 20px;
+      border-radius: 10px 10px 0 0;
+      border-bottom: 2px solid white;
+      text-shadow: 5px 5px 10px black;
+    }
+
+    content > .moves > .container > .move2 > .move2des {
+      color: black;
+      padding-top: 10px;
+      background-color: rgba(255,255,255,0.75);
+    }
+
+    content > .moves > .container > .move2 > .move2des > figure {
+      width: 35%;
+      float: right;
+      padding: 10px;
+    }
+
+    content > .moves > .container > .move2 > .move2des > figure > img {
+      width: 100%;
+    }
+    /* /Move2 */
+
+    /* Move3 */
+    content > .moves > .container > .move3 {
+      border: 2px solid white;
+      border-radius: 10px;
+      padding: 0;
+      margin-bottom: 15px;
+    }
+
+    content > .moves > .container > .move3 > h1 {
+      color: white;
+      background-color: rgba(255,0,0,0.75);
+      margin: 0;
+      padding: 20px 0 10px 20px;
+      border-radius: 10px 10px 0 0;
+      border-bottom: 2px solid white;
+      text-shadow: 5px 5px 10px black;
+    }
+
+    content > .moves > .container > .move3 > .move3des {
+      color: black;
+      padding-top: 10px;
+      background-color: rgba(255,255,255,0.75);
+    }
+
+    content > .moves > .container > .move3 > .move3des > figure {
+      width: 50%;
+      float: right;
+      padding: 10px;
+    }
+
+    content > .moves > .container > .move3 > .move3des > figure > img {
+      width: 100%;
+    }
+    /* /Move3 */
+  /* /Moves */
+
+  /* Ranks */
+    content > .ranks > .container > h1 {
+      color: white;
+      margin: 0 0 20px 0;
+      text-shadow: 5px 5px 10px red;
+      text-decoration: underline;
+    }
+  /* /Ranks */
+/* /Content */
+
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+<!-- Top Part -->
+    <header>
+
+      <!-- Banner -->
+      <div class="container-fluid">
+
+        <!-- Logo -->
+        <div class="logotop col-md-3 col-sm-3 col-xs-3">
+
+        </div>
+        <!-- /Logo -->
+
+        <!-- Website Name -->
+        <div class="websitename col-md-9 col-sm-9 col-xs-9">
+          <h1>GitGud.com</h1>
+          <p>
+            Learn basic Muay Thai easily through this guidelines.
+          </p>
+        </div>
+        <!-- /Website Name -->
+      </div>
+      <!-- /Banner -->
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="207">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">HOME</a></li>
+              <li class="dropdown">
+                <a href="Muay Thai.html" class="dropdown-toggle" data-toggle="dropdown">
+                    MUAY THAI
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="Muay Thai.html">Overview</a></li>
+                  <li><a href="Muay Thai.html#history">History</a></li>
+                  <li><a href="Muay Thai.html#moves">Moves</a></li>
+                  <li><a href="Muay Thai.html#ranks">Ranks</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="BJJ.html" class="dropdown-toggle" data-toggle="dropdown">
+                  BJJ
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="BJJ.html">Overview</a></li>
+                  <li><a href="BJJ.html#history">History</a></li>
+                  <li><a href="BJJ.html#moves">Moves</a></li>
+                  <li><a href="BJJ.html#ranks">Ranks</a></li>
+                </ul>
+              </li>
+              <li><a href="about.html">ABOUT ME</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- /Navigation -->
+
+    </header>
+<!-- /Top Part -->
+
+<!-- Content -->
+    <content>
+    <!-- History -->
+      <div class="history container-fluid" id="history">
+        <h1 style="margin: 0 0 10px 0">HISTORY</h1>
+
+        <div class="panel-group">
+        <!-- International -->
+          <div class="international panel panel-danger">
+            <div class="panel-heading">
+              International
+            </div>
+            <div class="panel-body">
+              <div class="intimg">
+                <img src="imagespage1/history/history1.jpg" alt="">
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        <!-- /International -->
+
+      <!-- Local -->
+          <div class="localhist panel panel-danger">
+            <div class="panel-heading">
+              Local
+            </div>
+            <div class="panel-body">
+              <div class="locimg">
+                <img src="imagespage1/history/history2.jpg" alt="">
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+      <!-- /Local -->
+        </div>
+      </div>
+    <!-- /History -->
+    <hr>
+    <!-- Moves -->
+      <div class="moves row container-fluid" id="moves">
+        <div class="container">
+          <h1>MOVES</h1>
+        </div>
+        <!-- Stance -->
+        <div class="stance col-md-12 col-sm-12 col-xs-12">
+          <h1>Stance</h1>
+          <div class="stancedes container-fluid">
+            <figure>
+              <img src="imagespage1/moves/stance.jpg" alt="">
+              <figcaption><b>Muay Thai Basic Stance</b></figcaption>
+            </figure>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+        <!-- /Stance -->
+
+        <!-- Move1 -->
+        <div class="container col-md-4 col-sm-12 col-xs-12">
+          <div class="move1">
+            <h1>Superman Punch</h1>
+            <div class="move1des container-fluid">
+              <figure>
+                <img src="imagespage1/moves/move1.jpg" alt="">
+              </figure>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                lorem
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /Move1 -->
+
+        <!-- Move2 -->
+        <div class="container col-md-4 col-sm-12 col-xs-12">
+          <div class="move2">
+            <h1>Flying Knee</h1>
+            <div class="move2des container-fluid">
+              <figure>
+                <img src="imagespage1/moves/move2.jpg" alt="">
+              </figure>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /Move2 -->
+
+        <!-- Move3 -->
+        <div class="container col-md-4 col-sm-12 col-xs-12">
+          <div class="move3">
+            <h1>Spinning Back Elbow</h1>
+            <div class="move3des container-fluid">
+              <figure>
+                <img src="imagespage1/moves/move3.jpg" alt="">
+              </figure>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /Move3 -->
+      </div>
+    <!-- /Moves -->
+    <hr>
+    <!-- Ranks -->
+      <div class="ranks container-fluid" id="ranks">
+        <div class="container">
+          <h1>RANKS</h1>
+        </div>
+        <div class="container row">
+          
+        </div>
+      </div>
+    <!-- /Ranks -->
+    </content>
+<!-- /Content -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

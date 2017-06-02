@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>About me</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <style type="text/css">
+/* General */
+    body {
+      background: linear-gradient(
+          rgba(190,190,190,0.1),
+          rgba(190,190,190,0.1)
+          ), url(image/background.jpg);
+      background-attachment: fixed;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+/* /General */
+
+/* Menu */
+    nav .navbar-header > .navbar-brand {
+      width: 20%;
+      transform: translate(10%, -30%);
+    }
+
+    nav .navbar-header > .navbar-brand > img {
+      width: 100%;
+    }
+
+/* /Menu */
+
+/* About */
+  /* Left */
+    .sectionname {
+      color: white;
+      text-shadow: 5px 5px 10px red;
+      text-decoration: underline;
+    }
+    
+    .card,
+    .card > .container {
+      box-shadow: 0 5px 30px 5px black;
+      max-width: 300px;
+      text-align: center;
+      background-color: rgba(255,255,255,0.75);
+    }
+
+    .card {
+      padding: 0;
+    }
+
+    .card::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .card .title {
+      color: grey;
+      font-size: 18px;
+    }
+
+    .card > img {
+      width: 100%;
+    }
+
+    .card button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .card button:hover {
+      opacity: 0.7;
+    }
+
+    .card .social {
+      padding: 8px;
+    }
+  /* /Left */
+
+  /* Right */
+    .about .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+
+    .about .tab > button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    .about .tab > button.active {
+      background-color: #ccc;
+    }
+
+    .about .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      -webkit-animation: fadeEffect 1s;
+      animation: fadeEffect 1s;
+      background-color: rgba(255,255,255,0.75);
+    }
+
+    @-webkit-keyframes fedeEffect {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes fadeEffect {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  /* /Right */
+/* /About */
+    </style>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand">
+            <img src="image/logo_JP.png" alt="">
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">HOME</a></li>
+            <li class="dropdown">
+              <a href="Muay Thai.html" class="dropdown-toggle" data-toggle="dropdown">
+                  MUAY THAI
+                  <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="Muay Thai.html">Overview</a></li>
+                <li><a href="Muay Thai.html#history">History</a></li>
+                <li><a href="Muay Thai.html#moves">Moves</a></li>
+                <li><a href="Muay Thai.html#ranks">Ranks</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="BJJ.html" class="dropdown-toggle" data-toggle="dropdown">
+                BJJ
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="BJJ.html">Overview</a></li>
+                <li><a href="BJJ.html#history">History</a></li>
+                <li><a href="BJJ.html#moves">Moves</a></li>
+                <li><a href="BJJ.html#ranks">Ranks</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html">ABOUT ME</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="sectionname container">About Me</h1>
+
+    <div class="about container-fluid">
+      <div class="card container col-md-3">
+        <img src="aboutme/profile.jpg" alt="">
+        <div class="container">
+          <h1>Jaekz Javier</h1>
+          <p class="title">CEO, Stark Industries</p>
+          <p>Genious, Billionaire, Playboy, Philantropist</p>
+          <p>Web Developer, Muay Thai and Brazilian Jiu-Jitsu Master</p>
+          <div class="social">
+            <a href="#"><img src="aboutme/facebook.png" alt="" style="width: 12%"></a>
+            <a href="#"><img src="aboutme/twitter.png" alt="" style="width: 12%"></a>
+            <a href="#"><img src="aboutme/instagram.png" alt="" style="width: 12%"></a>
+            <a href="#"><img src="aboutme/google.png" alt="" style="width: 12%"></a>
+            <a href="#"><img src="aboutme/youtube.png" alt="" style="width: 12%"></a>
+            <a href="#"><img src="aboutme/viber.png" alt="" style="width: 12%"></a>
+            <a href="#"><img src="aboutme/skype.png" alt="" style="width: 12%"></a>
+          </div>
+          <div>
+            <p><button>Contact Me</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container col-md-9">
+        <div class="tab">
+          <button class="tablinks" onclick="openResume(event, 'personal')">Personal Data</button>
+          <button class="tablinks" onclick="openResume(event, 'educational')">Educational Background</button>
+          <button class="tablinks" onclick="openResume(event, 'work')">Work Experience</button>
+          <button class="tablinks" onclick="openResume(event, 'extra')">Extra Curricular</button>
+          <button class="tablinks" onclick="openResume(event, 'skills')">Program Skills</button>
+        </div>
+
+        <div class="tabcontent" id="personal">
+          <h3>asdasd</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+
+        <div class="tabcontent" id="educational">
+          <h3>eqqsfa</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+
+        <div class="tabcontent" id="work">
+          <h3>qopdgs</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+
+        <div class="tabcontent" id="extra">
+        </div>
+
+        <div class="tabcontent" id="skills">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript">
+      function openResume(evt, resumeName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(resumeName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+  
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
